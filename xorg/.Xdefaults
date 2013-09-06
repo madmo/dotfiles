@@ -1,0 +1,39 @@
+! --- Xft ---
+Xft.dpi:		96
+Xft.antialias:		true
+Xft.hinting:		true
+Xft.hintstyle:		hintfull
+Xft.rgba:		rgb
+
+! --- URxvt ---
+URxvt*loginShell:	true
+URxvt*urgentOnBell:	true
+URxvt*termName:		xterm
+URxvt.cursorColor:	orange
+URxvt*pointerBlank:	true
+URxvt*lineSpace:	1
+
+URxvt*font:		xft:SourceCodePro-Regular:size=10
+URxvt*boldFont:		xft:SourceCodePro-Regular:size=10
+
+URxvt*scrollBar:	false
+URxvt*saveLines:	32767
+
+URxvt*perl-lib:		/usr/lib/urxvt/perl/
+URxvt*perl-ext-common:	matcher
+URxvt*urlLauncher:	/usr/bin/chromium
+URxvt*matcher.button:	1
+URxvt.matcher.rend.0:	fg13
+
+URxvt.keysym.C-Left:	\033[1;5D
+URxvt.keysym.C-Right:	\033[1;5C
+
+URxvt.transparent:	true
+URxvt.shading:		10
+
+*.foreground:		#aaaaaa
+*.background:		#000000
+
+!#include ".xorg/rezza.xcolors"
+#include ".xorg/tango.xcolors"
+!#include ".xorg/tomorrow.xcolors"

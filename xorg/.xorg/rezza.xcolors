@@ -1,0 +1,35 @@
+! Rezza (ripped from http://phraktured.net/config/.Xcolors and modified)
+
+!black
+*color0:	rgb:24/24/24
+*color8:	rgb:55/55/55
+
+!red
+*color1:	rgb:9b/32/32
+*color9:	rgb:bf/36/36
+
+!green
+*color2:	rgb:58/7d/20
+*color10:	rgb:89/b8/3f
+
+!brown/yellow
+*color3:	rgb:aa/99/43
+*color11:	rgb:ef/ef/60
+
+!blue
+*color4:	rgb:28/42/75
+*color12:	rgb:81/a2/be
+
+!magenta
+*color5:	rgb:70/6c/9a
+*color13:	rgb:b2/94/bb
+
+!cyan
+*color6:	rgb:47/8f/8e
+*color14:	rgb:84/cb/d9
+
+!white
+*color7:	rgb:ff/ff/ff
+*color15:	rgb:dd/dd/dd
+
+! vim:ft=xdefaults
