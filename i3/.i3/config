@@ -151,3 +151,6 @@ bar {
 }
 
 for_window [class="hg4"] floating enable
+
+# automatic wallpaper
+exec hsetroot -center ~/wallpaper.jpg
