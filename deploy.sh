@@ -11,7 +11,7 @@ function deploy() {
 	shopt -s dotglob
 	for f in $1/*
 	do
-		test -e "../${f#$1/}" && rm -i "../${f#$1/}"
+		test -e "../${f#$1/}" && rm -ri "../${f#$1/}"
 		ln -sf "$(realpath "$f")" ../${f#$1/}
 	done
 }
