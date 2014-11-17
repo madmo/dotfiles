@@ -178,4 +178,4 @@ function! CleverTab()
     return "\<C-N>"
   endif
 endfunction
-inoremap <Tab> <C-R>=CleverTab()<CR>
+inoremap <expr> <silent> <tab> CleverTab()
