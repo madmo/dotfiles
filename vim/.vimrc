@@ -1,11 +1,31 @@
-" Configuration file for gvim
-" Written for Debian GNU/Linux by W.Akkerman <wakkerma@debian.org>
-" Some modifications by J.H.M. Dassen <jdassen@wi.LeidenUniv.nl>
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" git integration
+Plugin 'tpope/vim-fugitive'
+" complete using clang
+Plugin 'clang-complete'
+
+" cmake integration
+Plugin 'scrooloose/nerdtree'
+Plugin 'benmills/vimux'
+Plugin 'sigidagi/vim-cmake-project'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+set shell=/bin/bash
 
 " Normally we use vim-extensions. If you want true vi-compatibility
 " remove change the following statements
-set nocompatible	" Use Vim defaults (much better!)
 set backspace=2		" allow backspacing over everything in insert mode
 " Now we set some defaults for the editor 
 set autoindent		" always set autoindenting on
@@ -179,3 +199,6 @@ function! CleverTab()
   endif
 endfunction
 inoremap <expr> <silent> <tab> CleverTab()
+
+" run astyle on current buffer
+command Astyle exec "1,$!astyle"
