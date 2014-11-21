@@ -18,6 +18,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'benmills/vimux'
 Plugin 'sigidagi/vim-cmake-project'
 
+Plugin 'ctrlp.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
