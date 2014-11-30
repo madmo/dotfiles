@@ -1,0 +1,10 @@
+--style=linux
+--indent=tab=4
+--min-conditional-indent=0
+--pad-oper
+--add-brackets
+--unpad-paren
+--pad-header
+--align-pointer=type
+--delete-empty-lines
+--break-blocks
