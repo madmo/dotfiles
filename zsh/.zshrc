@@ -35,5 +35,9 @@ case "$TERM" in
         ;;
 esac
 
+# history search
+bindkey "^[[5~" history-beginning-search-backward
+bindkey "^[[6~" history-beginning-search-forward
+
 # suse prompt style
 prompt suse
